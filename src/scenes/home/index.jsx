@@ -4,6 +4,7 @@ import Head from "./Head";
 import Teachers from "./Teachers";
 import Comment from "./Comment";
 import Questions from "./Questions";
+import Concat from "./Concat";
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Teachers/>
       <Comment/>
       <Questions/>
+      <Concat/>
     </>
   );
 };

@@ -68,9 +68,8 @@
   background-color: white;
   gap: 10px;
   overflow: hidden;
-  @media  (max-width : 600px) {
+  @media (max-width: 600px) {
     width: 95%;
-
   }
   &__head {
     display: flex;
@@ -91,11 +90,11 @@
     order: 0;
     flex-grow: 0;
     z-index: 0;
-    @media  (max-width : 600px) {
-        font-size: 17px;
+    @media (max-width: 600px) {
+      font-size: 17px;
     }
-    @media  (max-width : 450px) {
-        font-size: 13px;
+    @media (max-width: 450px) {
+      font-size: 13px;
     }
   }
   & p {
@@ -111,9 +110,9 @@
     order: 1;
     flex-grow: 0;
     transition: 1s;
-    @media  (max-width : 600px){
-        font-size: 16px;
-        width: 95%;
+    @media (max-width: 600px) {
+      font-size: 16px;
+      width: 95%;
     }
   }
 }
