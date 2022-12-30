@@ -3,11 +3,14 @@ import styled from "scss/questions.module.scss";
 
 const QuestionsExcerpt = ({ count, increment, title, body }) => {
   const [visible, setVisible] = useState(false);
-  const handlerClick = () =>{
-    setVisible(visible === true ?  false: true)
-  }
+  const handlerClick = () => {
+    setVisible(visible === true ? false : true);
+  };
   return (
-    <aside className={styled.excerpt} onClick={handlerClick}>
+    <aside
+      className={styled.excerpt}
+      onClick={handlerClick}
+    >
       <div className={styled.excerpt__head}>
         <h1>{title}</h1>
         {visible ? (
@@ -16,7 +19,7 @@ const QuestionsExcerpt = ({ count, increment, title, body }) => {
           <img src={count} alt="count" />
         )}
       </div>
-     {visible && <p>{body}</p>}
+      {visible && <p>{body}</p>}
     </aside>
   );
 };
