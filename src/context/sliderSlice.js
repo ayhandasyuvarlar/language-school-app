@@ -1,11 +1,7 @@
-import carouselImg from "img/headpeople.png";
-import carouselImgTwo from "img/listone.png";
 import carouselImgThree from "img/listfour.png";
-import carouselImgFour from "img/teachertwo.jpeg";
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 import english from "img/english.png";
-import italian from "img/italian.png";
-import spanish from "img/spanish.png";
+
 const initialState = {
   title: "TOP STUDIYING",
   content: "Our students say",

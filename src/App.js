@@ -1,14 +1,25 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import styled from 'scss/head.module.scss'
+import styled from "scss/head.module.scss";
 import React from "react";
-import HomePage from "scenes/home";
-
+const Lazy = React.lazy(() => import("./scenes/home"));
 function App() {
+  const Loading = (
+    <div className={styled.loader}>
+      <span className="loader"></span>
+    </div>
+  );
   return (
     <main className={styled.App}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={
+              <React.Suspense fallback={Loading}>
+                <Lazy />
+              </React.Suspense>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </main>

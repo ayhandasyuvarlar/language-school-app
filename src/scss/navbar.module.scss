@@ -1,7 +1,7 @@
 .nav_container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 0px 216px;
   margin: 0px auto;
@@ -21,7 +21,6 @@
     justify-content: space-between;
     gap: 0px !important;
   }
-
   &__logo {
     display: flex;
     flex-direction: row;
