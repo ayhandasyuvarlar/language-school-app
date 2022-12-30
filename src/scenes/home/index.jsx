@@ -5,6 +5,7 @@ import Teachers from "./Teachers";
 import Comment from "./Comment";
 import Questions from "./Questions";
 import Concat from "./Concat";
+import Footer from "scenes/Footer";
 const HomePage = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Comment/>
       <Questions/>
       <Concat/>
+      <Footer/>
     </>
   );
 };

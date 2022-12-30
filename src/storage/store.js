@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import featuresSlice from "context/featuresSlice";
+import footerSlice from "context/footerSlice";
 import navDataSlice from "context/navDataSlice";
 import questionsSlice from "context/questionsSlice";
 import sliderSlice from "context/sliderSlice";
@@ -12,5 +13,6 @@ export const store = configureStore({
     teachers: teachersSlice,
     carousel: sliderSlice,
     questions: questionsSlice,
+    footer: footerSlice,
   },
 });
